@@ -1,0 +1,131 @@
+@media (max-width: 500px) {
+    body {
+        background-image: url(pictures/background_mobil.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 400%;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .main-header {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-header h1 {
+        font-size: 25px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 340px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .logo img {
+        display: block;
+        width: 100%;
+    }
+
+    menu {
+        transition: 0.2s;
+    }
+
+    .menu li:hover {
+        scale: 1;
+    }
+
+    .menu-left {
+        flex-direction: row;
+        order: 1;
+        width: 100%;
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+        transform: none;
+    }
+
+    .menu-right {
+        flex-direction: row;
+        gap: 1em;
+        order: 2;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        display: grid;
+    }
+
+    menu:first-child>li:nth-child(1) {
+        transform: translateX(-20px);
+    }
+
+    menu:first-child>li:nth-child(2) {
+        transform: translateY(-30px) translateX(10px);
+    }
+
+    menu:first-child>li:nth-child(3) {
+        transform: translateX(30px);
+    }
+
+    menu:last-child>li:nth-child(1) {
+        transform: translateX(-30);
+    }
+
+    menu:last-child>li:nth-child(2) {
+        transform: translateY(-30px) translateX(-2px);
+    }
+
+    menu:last-child>li:nth-child(3) {
+        transform: translateX(15px);
+    }
+
+    menu:last-child>li:last-child:hover {
+        font-size: 20px;
+        transition: 0s;
+    }
+
+    .even-container {
+        display: flex;
+    }
+
+    .main-container div:nth-child(even) {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+    }
+
+    .main-container div:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+    }
+
+    .game-picture {
+        width: 100%;
+    }
+
+    .main-container div:nth-child(odd)>h2 {
+        margin: 0px;
+    }
+}
